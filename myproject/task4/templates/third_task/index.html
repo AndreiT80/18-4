@@ -1,0 +1,20 @@
+<!-- templates/third_task/index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игровая платформа - Главная страница</title>
+</head>
+<body>
+    <h1>Главная страница</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Главная</a></li>
+            <li><a href="{% url 'page1' %}">МАГАЗИН</a></li>
+            <li><a href="{% url 'page2' %}">КОРЗИНА</a></li>
+        </ul>
+    </nav>
+    <p>Добро пожаловать на игровую платформу!</p>
+</body>
+</html>

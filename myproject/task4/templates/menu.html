@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block pagename1 %}Моя страница{% endblock %}</title>
+</head>
+<body>
+
+    <div>
+        <h1>{% block pagename %}ГЛАВНАЯ СТРАНИЦА{% endblock %}</h1>
+    </div>
+
+    <nav>
+        <ul>
+            {% block menu %}
+            <li><a href="/">Главная</a></li>
+            <li><a href="{% url 'games' %}">Магазин</a></li>
+            <li><a href="{% url 'about' %}">Корзина</a></li>
+            {% endblock %}
+        </ul>
+    </nav>
+
+    <div>
+       <!-- <h2>Содержимое страницы</h2> -->
+        {% block content %}
+    <!-- <p>Тут будет контент страницы.</p> -->
+        {% endblock %}
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!-- templates/third_task/page1.html -->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вторая страница</title>
+</head>
+<body>
+    <h1>Магазин</h1>
+    <h2>Список товаров</h2>
+
+    <ul>
+        {% for key, value in items.items %}
+            <li>
+                {{ value }}
+                <button>Купить</button> <!-- Кнопка без функционала -->
+            </li>
+        {% endfor %}
+    </ul>
+
+    <button onclick="window.location.href='{% url 'index' %}'">Вернуться на главную</button>
+</body>
+</html>

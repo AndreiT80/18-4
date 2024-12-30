@@ -1,0 +1,17 @@
+{% extends "menu.html" %}
+
+{% block pagename %}
+ИГРЫ
+{% endblock %}
+
+{% block content %}
+    <h2>Наши игры</h2>
+    <ul>
+        {% for game in games %}
+            <li>
+                {{ game }}
+                <button>Купить</button> <!-- Кнопка без функционала -->
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

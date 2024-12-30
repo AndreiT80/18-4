@@ -1,0 +1,24 @@
+<!-- templates/third_task/page2.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Третья страница</title>
+</head>
+<body>
+    <h1>КОРЗИНА</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Главная</a></li>
+            <li><a href="{% url 'page1' %}">МАГАЗИН</a></li></li>
+            <li><a href="{% url 'page2' %}">КОРЗИНА</a></li>
+        </ul>
+    </nav>
+    <p>ИЗВЕНИТЕ ВАША КОРЗИНА ПУСТА.</p>
+
+    </ul>
+
+    <button onclick="window.location.href='{% url 'index' %}'">Вернуться на главную</button>
+</body>
+</html
